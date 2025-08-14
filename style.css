@@ -1,0 +1,53 @@
+:root {
+  --background-color: #121212;
+  --text-color: #e4e4e4;
+  --outline: #ff0000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+#logo {
+  width: 30svw;
+}
+
+.title {
+  text-align: center;
+}
+
+#sound-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.sound-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 2em;
+  width: 10em;
+  border: 2px var(--outline) solid;
+  padding: 1em 2.5em;
+  margin: 1em;
+  border-radius: 25px;
+  transition: all 0.2s ease-in;
+}
+
+.sound-btn > p {
+  font-weight: bold;
+}
+
+.sound-btn:hover {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  outline: 3px var(--outline) dashed;
+}
