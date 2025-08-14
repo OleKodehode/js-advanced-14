@@ -3,7 +3,7 @@ const soundMap = {
   q: "work_it",
   w: "make_it",
   e: "do_it",
-  r: "make_us",
+  r: "makes_us",
   t: "harder",
   y: "better",
   u: "faster",
